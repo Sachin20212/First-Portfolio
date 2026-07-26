@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Portfolio" content="Web_development-Life, initial-scale=1.0">
-    <link rel="Icon" type="image/png" href="/image/logo/paint.png">    
-    <title>SachinPortfolio</title> 
+    <link rel="Icon" type="image/png" href="/image/logo/paint.png">   
+    <title>Sachin Portfolio</title>
     <style>
         *{margin: 0; padding: 0;
           text-decoration: none;
@@ -139,7 +139,6 @@
             }
             
         }
-        
 
         section{
             min-height: 100vh;
@@ -149,17 +148,15 @@
         .home{
             display: flex;
             justify-content: center;
-            margin-left: 50px;
+            align-items: center;
             gap: 8rem;
             background-color: black;
         }
-
         .home .home-content{
             font-size: 6rem;
             font-weight: 700;
             line-height: 1.3;
         }
-        
         span{
             color: #b74b4b;
         }
@@ -169,6 +166,23 @@
             margin-bottom: 1rem;
             font-weight: 700;
         }
+
+        .home_img{
+            border-radius: 50%;
+        }
+        .home_img img{
+            width: 32vw 38vw;
+            border-radius: 50%;
+            box-shadow: 0 0 25px solid #b74b4b;
+            cursor: pointer;
+            transition: 0.2s linear;
+        }
+        .home_img img:hover{
+            font-size: 1.8rem 2.2rem;
+            font-weight: 500;
+        } 
+        
+        
         .social-icons a img {
             display: inline-block;
             justify-content: center;
@@ -214,49 +228,6 @@
             font-weight: 600;
             min-width: 280px;
         }
-        .typing-text span{
-            position: relative;
-        }
-        .typing-text span::before{
-            content: "Front-End Development";
-            color: #b74b4b;
-            animation: words 20s infinite;
-        }
-        .typing-text span::after{
-            content: "";
-            background-color: black;
-            position: absolute;
-            width: calc(100% + 8px);
-            height: 100%;
-            border-left: 3px solid black;
-            right: -8;
-            animation: cursor 0.6s infinite;
-        }
-
-        @keyframes cursor{
-            to{
-                border-left: 3px solid #b74b4b;
-            }
-        }
-
-        @keyframes words{
-            0%, 20%{
-                
-                content: "Hypertext Markup Language (HTML)";
-            }
-            21%, 40%{
-                content: "Content Management Systems (CMS)";
-            }
-            41%, 60%{
-                content: "JavaScript (JS)";
-            }
-            61%, 80%{
-                content: "Creativity";
-            }
-            81%, 100%{
-                content: "Content Management Systems (CMS)";
-            }
-        }
 
         @media (max-width:1000px){
             .home{
@@ -282,7 +253,7 @@
                 margin-top:4rem;
             }
         }
-        
+
     </style>
 </head>
 <body>
@@ -291,7 +262,7 @@
 
         <nav>
             <ul class="sidebar">
-                <li onclick="closedbar()"><a href="#"><img src="/image/Assts/x-solid.png" alt="Close" height="48px" width="48px"a></li>
+                <li onclick="closedbar()"><a href="#"><img src="/image/Assts/x-solid.png" alt="Close" height="48px" width="48px"></a></li>
                 <li><a href="/index.html" class="active">Home</a></li>
                 <li><a href="/Services.html">Services</a></li>
                 <li><a href="/Certifications-list.html">Certifications list</a></li>
@@ -313,18 +284,13 @@
         </nav>
     </header>
     <section class="home">
+        <div class="home_img">
+            <img src="/image/logo/paint.png" alt="Ower">
+        </div>
         <div class="home-content">
             <h1>Hi, it's <span>Sachin</span></h1>
-            <h3 class="typing-text">Skills list <span></span></h3>
-            <p>
-                <ul>
-                    <li>HTML (HyperText Markup Language) is the backbone of every website. I have developed strong HTML skills that enable me to create well-structured, semantic, and accessible web pages.</li>
-                    <li>CSS (Cascading Style Sheets) transforms structured HTML into visually appealing, responsive, and user-friendly web experiences. I enjoy using CSS to create clean layouts, engaging interfaces, and consistent designs across devices.</li>
-                    <li>JS (JavaScript) is the foundation of modern web development, enabling the creation of dynamic, interactive, and user-friendly applications. I enjoy using JavaScript to build responsive interfaces, solve complex programming challenges, and develop scalable web solutions.</li>
-                    <li>Creativity in web development is about transforming ideas into engaging, functional, and user-centered digital experiences. I enjoy combining design thinking with modern web technologies to create websites and applications that are visually appealing, responsive, and intuitive.</li>
-                    <li>I use Content Management Systems (CMS) to create, customize, and manage websites efficiently. I enjoy building responsive, user-friendly, and scalable websites, customizing themes and plugins, optimizing performance, and ensuring smooth content management.</li>
-                </ul>
-            </p>
+            <h3 class="typing-text">Experience </h3>
+            <p>2 weeks Experience</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/sachin-upadhyay-1a0660419/" target="_blank"><img src="/image/Social Media logo/linkedin-brands-solid.png" alt="Linkedin"></a>
                 <a href="#"><img src="/image/Social Media logo/github-brands-solid.png" alt="Github"></a>                

@@ -79,6 +79,12 @@
         nav ul li a img{
             display: none;
         }
+        nav ul li a img:hover{
+            background-color: orange;
+        }
+        nav ul li a img:active{
+            background-color: orange;
+        }
         .sidebar{
             position: fixed;
             display: none;
@@ -112,6 +118,15 @@
         }
         .sidebar a{
             width: 100%;
+        }
+        .sidebar li a img{
+            background-color: white;
+        }
+        .sidebar li a img:hover{
+            background-color: red;
+        }
+        .sidebar li a img:active{
+            background-color: red;
         }
 
         @media (max-width:1090px) {
@@ -261,13 +276,13 @@
 
         <nav>
             <ul class="sidebar">
-                <li onclick="closedbar()"><a href="#"><img src="/image/Assts/x-solid.png" alt="Close" height="48px" width="48px" style="background-color: white;"></a></li>
+                <li onclick="closedbar()"><a href="#"><img src="/image/Assts/x-solid.png" alt="Close" height="48px" width="48px"></a></li>
                 <li><a href="/index.html" class="active">Home</a></li>
                 <li><a href="/Services.html">Services</a></li>
                 <li><a href="/Certifications-list.html">Certifications list</a></li>
                 <li><a href="/Skills-page.html">Skills list</a></li>
                 <li><a href="/Education.html">Education</a></li>
-                <li><a href="">Experience</a></li>
+                <li><a href="/Experience.html">Experience</a></li>
                 <li><a href="/Contact.html">Contact</a></li>
             </ul>
             <ul>
@@ -276,7 +291,7 @@
                 <li class="hiddenbar"><a href="/Certifications-list.html">Certifications list</a></li>
                 <li class="hiddenbar"><a href="/Skills-page.html">Skills list</a></li>
                 <li class="hiddenbar"><a href="/Education.html">Education</a></li>
-                <li class="hiddenbar"><a href="">Experience</a></li>
+                <li class="hiddenbar"><a href="/Experience.html">Experience</a></li>
                 <li class="hiddenbar"><a href="/Contact.html">Contact</a></li>
                 <li onclick="showBarmenu()"><a href="#"><img src="/image/Assts/bars-solid.png" height="65px" width="70px" ></a></li>
             </ul>
@@ -287,11 +302,11 @@
             <img src="/image/logo/paint.png" alt="Ower">
         </div>
         <div class="home-content">
-            <h1>Hi, it's <span>Sachin</span></h1><br><br><br><br>
+            <h1>Hi, it's <span>Sachin</span></h1>
             <h3 class="typing-text">services:</h3><br><br>
             <p>
                 <ul>
-                    <li>Customize user experience.</li><br><br>
+                    <li>Customize user experience.</li><br>
                     <li>Bringing life to designer’s concept with HTML, CSS, and Javascript.</li><br>
                     <li>Production, modification, and maintenance of websites and web application user interfaces.</li><br>
                     <li>Tool creation enhancing how users see and interact with your site in a browser.</li><br>
