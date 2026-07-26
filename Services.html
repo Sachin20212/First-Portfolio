@@ -212,15 +212,7 @@
             font-weight: 600;
             min-width: 280px;
         }
-        .typing-text span{
-            position: relative;
-        }
-        .typing-text span::before{
-            content: "Front-End Development";
-            color: #b74b4b;
-            animation: words 20s infinite;
-        }
-        .typing-text span::after{
+        .typing-text H3::after{
             content: "";
             background-color: black;
             position: absolute;
@@ -237,24 +229,6 @@
             }
         }
 
-        @keyframes words{
-            0%, 20%{
-                content: "Web Development";
-            }
-            21%, 40%{
-                content: "Development";
-            }
-            41%, 60%{
-                content: "Web Designer";
-            }
-            61%, 80%{
-                content: "WordPress";
-            }
-            81%, 100%{
-                content: "MS-Excel";
-            }
-        }
-
         @media (max-width:1000px){
             .home{
                 gap: 4rem;
@@ -267,7 +241,7 @@
             }
             
             .home .home-content h3{
-                font-size: 2.5rem;
+                font-size: 2.5rem 3rem;
             }
 
             .home-content h1{
@@ -298,7 +272,7 @@
             </ul>
             <ul>
                 <li class="hiddenbar"><a href="/index.html" class="active">Home</a></li>
-                <li class="hiddenbar"><a href="">Services</a></li>
+                <li class="hiddenbar"><a href="/Services.html">Services</a></li>
                 <li class="hiddenbar"><a href="/Certifications-list.html">Certifications list</a></li>
                 <li class="hiddenbar"><a href="/Skills-page.html">Skills list</a></li>
                 <li class="hiddenbar"><a href="/Education.html">Education</a></li>
@@ -314,8 +288,19 @@
         </div>
         <div class="home-content">
             <h1>Hi, it's <span>Sachin</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p></p>
+            <h3 class="typing-text">services:</h3>
+            <p>
+                <ul>
+                    <li>Customize user experience.</li>
+                    <li>Bringing life to designer’s concept with HTML, CSS, and Javascript.</li>
+                    <li>Production, modification, and maintenance of websites and web application user interfaces.</li>
+                    <li>Tool creation enhancing how users see and interact with your site in a browser.</li>
+                    <li>Implementing responsive design for mobile sites.</li>
+                    <li>Contributing some back-end experience, collaborating on APIs.</li>
+                    <li>Consulting on best SEO practices.</li>
+                    <li>Testing the site during development for usability and fixing any bugs.</li>
+                </ul>
+            </p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/sachin-upadhyay-1a0660419/" target="_blank"><img src="/image/Social Media logo/linkedin-brands-solid.png" alt="Linkedin"></a>
                 <a href="#"><img src="/image/Social Media logo/github-brands-solid.png" alt="Github"></a>                
